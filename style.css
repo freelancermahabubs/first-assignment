@@ -23,24 +23,36 @@
   font-size: 65px;
   font-weight: 700px;
   margin-bottom: 25px;
+  font-style: bold;
+  line-height: 76px;
+  line-height: 100%;
+  text-align: right;
+  vertical-align: top;
 }
 .banner-container .banner-description{
-  color: #552929;
+  color: #310000;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
+ line-height: 26px;
+ line-height: 139%;
+ vertical-align: top;
 }
 .btn-primary{
-  color: orange;
+  color: rgb(255, 255, 254);
   font-size: 20px;
-  background-color: blue;
+  background-color: rgb(255, 0, 0);
   font-weight: 600;
   height: 64px;
   padding: 20px 25px;
-  border: 1px solid yellowgreen;
+  border: 1px solid rgb(255, 218, 10);
   border-radius: 5px;
   box-shadow: 10px 10px 10px gray;
   cursor: pointer;
+}
+.btn-primary:hover{
+  transform: scale(1.1);
+  background-color: #1100ff;
 }
 
 main {
@@ -76,8 +88,8 @@ main {
 }
 
 .failures-details ul li::before {
-  content: '\1914\020';
-  color: rgb(0, 255, 0);
+  content: '\2914\020';
+  color: #16d887;
 }
 
 .failures-details ul li {
@@ -173,7 +185,7 @@ main {
 /* this is blending image section  */
 .blending-image {
   height: 250px;
-  background-image: url('./images/gradient1.png'), url('./images/watch.png'), linear-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0));
+  background-image: url('./images/gradient1.png'), url('./images/watch.png'), linear-gradient(rgba(199, 0, 218, 0.9), rgba(163, 4, 4, 0));
   background-blend-mode: overlay;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 10px;
@@ -283,10 +295,10 @@ main {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  box-shadow: 1px 3px 3px gray;
 }
 
 .subscription-container form input[type="submit"]:hover {
-  /* after button hover zoom effect */
   transform: scale(1.1);
-  background-color: #3700ff;
+  background-color: #1100ff;
 }

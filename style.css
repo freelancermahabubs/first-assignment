@@ -40,4 +40,253 @@
   border: 1px solid yellowgreen;
   border-radius: 5px;
   box-shadow: 10px 10px 10px gray;
+  cursor: pointer;
+}
+
+main {
+  padding: 0 208px;
+}
+
+/* styles failures section */
+.failures-container {
+  display: flex;
+  gap: 85px;
+  align-items: center;
+  margin-right: 40px;
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 15px;
+}
+
+.failures-details {
+  padding-top: 125px;
+}
+
+.failures-details .failures-title {
+  font-weight: 700;
+  color: #080101;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.failures-details .failures-description {
+  color: #3b1b1b;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 380;
+}
+
+.failures-details ul li::before {
+  content: '\1914\020';
+  color: rgb(0, 255, 0);
+}
+
+.failures-details ul li {
+  margin-bottom: 8px;
+  list-style: none;
+  color: #050000;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* skills section styles */
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+.section-title{
+  font-weight: 800;
+  margin-top: 58px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 58px;
+  font-size: 45px;
+}
+.skill {
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+}
+.my-skills :hover{
+  background-color: none;
+  color: rgb(25, 0, 255);
+  transition: all 0.25s ease-in;
+  transform: scale(1.05);
+  border: 2px solid rgba(255, 0, 212, 0.5);
+  box-shadow: 0.8px 12px 0 rgba(110, 110, 110, 0.5);
+}
+.skill-title {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.skill-description {
+  color: #757575;
+}
+/* plan section styles */
+
+.plan-container {
+  text-align: center;
+  margin-bottom: 130px;
+  cursor: pointer;
+}
+.plan-container .plan-items:hover{
+  background-color: orange;
+  color: white;
+  transition: all 0.25s ease-in;
+  transform: scale(1.05);
+  border: 1px solid rgba(0, 33, 248, 0.5);
+  box-shadow: 0.8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.plan-types {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.plan-items img {
+  margin-bottom: 22px;
+}
+
+.plan-title {
+  color: #151414;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 130px 0 50px 0;
+}
+
+.plan-sub-title {
+  color: #151414;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.plan-description {
+  color: #737272;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* this is blending image section  */
+.blending-image {
+  height: 250px;
+  background-image: url('./images/gradient1.png'), url('./images/watch.png'), linear-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0));
+  background-blend-mode: overlay;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.blending-image-container {
+  padding: 55px 0 0 65px;
+}
+
+.blending-image-title {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+/* information footer styles */
+.information {
+  height: 560px;
+  margin-top: 90px;
+  background-color: #050000;
+  margin-top: 90px;
+}
+
+.contact-details {
+  margin-top: 130px;
+  margin-left: 200px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 330px;
+  align-items: center;
+}
+
+.contact-title {
+  color: #F8F8F8;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-description {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contact-email {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-phone {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.contact-details a {
+  margin-right: 20px;
+}
+/* subscription styles */
+.subscription-container {
+  margin-right: 230px;
+  /* border: 2px solid green; */
+}
+
+.subscription-title {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.subscription-container form input[type="text"] {
+  width: 325px;
+  height: 65px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #151414;
+  border: 1px solid white;
+  color: white;
+  padding-left: 20px;
+}
+
+.subscription-container form input::placeholder {
+  color: #F3F3F3;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.subscription-container form input[type="submit"] {
+  height: 65px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 35px;
+  background-color: #eb0000;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscription-container form input[type="submit"]:hover {
+  /* after button hover zoom effect */
+  transform: scale(1.1);
+  background-color: #3700ff;
 }
